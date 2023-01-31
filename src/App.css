@@ -1,0 +1,96 @@
+.adding__span {
+    font-size: 16px;
+    top: 10px;
+    left: 15px;
+    opacity: 0.5;
+    letter-spacing: 1px;
+    transition: 0.5s top, background-color 0.5s, opacity 0.5s;
+    background-color: white;
+}
+
+.adding__title {
+    margin: 0 auto 30px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    width: max-content;
+}
+
+.adding__input {
+    width: 100%;
+    outline: none;
+}
+
+.adding__input:focus {
+    border-color: lightgreen;
+    color: black;
+
+    letter-spacing: 1px;
+}
+
+.adding__input:focus ~ .adding__span {
+    top: -12px;
+    opacity: 1;
+}
+
+.adding__input:valid ~ .adding__span {
+    top: -12px;
+    opacity: 1;
+}
+
+.adding__input:checked ~ .adding__span {
+    opacity: 1;
+}
+
+.adding__input_important {
+    width: 20px;
+}
+
+.todos__title {
+    background-color: #ffff48;
+    padding: 10px 40px;
+    border-radius: 20px 20px 0 0;
+    margin-bottom: 24px;
+    letter-spacing: 1px;
+    font-size: 18px;
+    width: 100%;
+}
+
+.todos__item {
+    flex-basis: 400px;
+    flex-grow: 0;
+    border-radius: 20px;
+}
+
+.todos__description {
+    word-wrap: anywhere;
+    text-align: left;
+    padding: 0 40px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    min-height: 80px;
+}
+
+.todos__description_change {
+    word-wrap: anywhere;
+    padding: 0 40px;
+    width: 100%;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    min-height: fit-content;
+}
+
+.todos__actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    padding: 10px 40px;
+    gap: 10px;
+}
+
+.todos__modify, .todos__delete {
+    padding: 5px 8px;
+    letter-spacing: 1px;
+    border-radius: 8px;
+}
